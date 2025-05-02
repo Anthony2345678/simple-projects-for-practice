@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    padding: 30px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    font-weight: 500;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-icon {
+    width: 40px;
+    height: auto;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* HERO */
+  .hero {
+    background-color: #f5f5f5;
+    padding: 100px 20px;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #4caf50;
+  }
+  
+  .hero .highlight {
+    color: #27ae60;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #4f4f4f;
+  }
+  
+  .btn-register {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .btn-register:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+  }
+  
+  .btn-register:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text {
+      text-align: center;
+    }
+  }
+  
+  /* FEATURES SECTION */
+  .features {
+    background-color: #f5f5f5;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .features-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .features-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 60px;
+  }
+  
+  .feature-cards {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  .feature-card:hover {
+    transform: perspective(600px) rotateX(3deg) rotateY(3deg) scale(1.03);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card img {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* CLIENTS */
+  .clients {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .clients-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .clients-subtitle {
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  .clients-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .clients-logos img {
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .clients-logos img:hover {
+    opacity: 1;
+  }
+  
